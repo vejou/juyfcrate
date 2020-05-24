@@ -1,0 +1,123 @@
+<html><head>
+<title>JavaScript - Move Object with Arrow Keys using JavaScript Function.</title>
+<script type="text/javascript">var xv = 0 
+var yv = 0
+var right = 0
+var left = 0
+var up = 0
+var down = 0 
+			//init object globally
+			var objImage= null;
+			function init(){
+				objImage=document.getElementById("image");				
+				objImage.style.position='relative';
+				objImage.style.left='0px';
+				objImage.style.top='0px';
+			}
+			function getKeyAndMove(e){				
+				var key_code=e.which||e.keyCode;
+				switch(key_code){
+					case 37: //left arrow key
+						moveLeft();
+						break;
+					case 38: //Up arrow key
+						moveUp();
+						break;
+					case 39: //right arrow key
+						moveRight();
+						break;
+					case 40: //down arrow key
+						moveDown();
+						break;}
+			}
+			//}
+			//function moveLeft(){
+			//	objImage.style.left=parseInt(objImage.style.left)-5 +'px';
+			//}
+			//function moveUp(){
+           // yv == -5
+			//}
+			//function moveRight(){
+           // xv == 5
+			//	objImage.style.left=parseInt(objImage.style.left)+5 +'px';
+			//}
+			//function moveDown(){
+			//	objImage.style.top=parseInt(objImage.style.top)+5 +'px';
+			//}
+            //function forceHorizontal(){
+			//	objImage.style.left=parseInt(objImage.style.left)-xv +'px';
+			//}
+			//function forceVertical(){
+			//	objImage.style.left=parseInt(objImage.style.up)-yv +'px';			//}
+            function moveLeft(){
+				objImage.style.left=parseInt(objImage.style.left)-5 +'px';
+			}
+			function moveUp(){
+				objImage.style.top=parseInt(objImage.style.top)-5 +'px';
+			}
+			function moveRight(){
+				objImage.style.left=parseInt(objImage.style.left)+5 +'px';
+			}
+			function moveDown(){
+				objImage.style.top=parseInt(objImage.style.top)+5 +'px';
+			}
+			window.onload=init;
+		</script>
+<script>
+//    while (xv!=0) {
+//xv == (xv-(xv/1.25)) }
+</script><script>
+//while (yv!=0) {
+//yv == (yv-(yv/1.25)
+</script>
+</head><body onkeydown="getKeyAndMove(event)">
+<script>function getKeyAndMove(e){				
+				var key_code=e.which||e.keyCode;
+				switch(key_code){
+					case 37: //left arrow key
+						left = 1
+						break;
+					case 38: //Up arrow key
+						up = 1
+						break;
+					case 39: //right arrow key
+						right = 1
+						break;
+					case 40: //down arrow key
+						down = 1
+                        break; }}
+						</script>
+
+
+<h1>JavaScript - Move Object with Arrow Keys using JavaScript Function.</h1>
+<h2>Use Arrow keys to move object left, top, right and down.</h2>
+<p> <script>
+do
+    down = (down-1)
+    moveLeft();
+    while (down>1);
+</script>
+<script>
+do
+    up = (up-1)
+        objImage.style.top=parseInt(objImage.style.top)-5 +'px';
+while (up>1);
+do
+</script>
+<script>
+do
+    right = (right-1)
+				objImage.style.left=parseInt(objImage.style.left)+5 +'px';
+while (right>1);
+do
+</script>
+<script>
+do
+    left = (left-1)
+	objImage.style.left=parseInt(objImage.style.left)-5 +'px';
+while (left>1);
+do
+    </script> </p><img id="image" src="https://avatars3.githubusercontent.com/u/65831412?s=60" alt=" " style="position: relative; left: 0px; top: 0px;">
+
+
+</body></html>
